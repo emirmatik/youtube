@@ -10,4 +10,4 @@ Video: https://www.youtube.com/watch?v=EmeejVmpqv8
 ### Paint 
 Video of easier version: https://www.youtube.com/watch?v=esS5F1TrbvM
 #### Photo
-![paint1](https://i.ibb.co/fNgccZk/123456.png)
+![paint1](https://i.ibb.co/bgqWvCm/789.png)
