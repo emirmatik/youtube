@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 2%;
+            font-family: sans-serif;
+        }
+
+        .container {
+            height: 90%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .canvas {
+            border: 1px solid black;
+            cursor: crosshair;
+        }
+
+        #custom-cursor {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border-radius: 50%;
+            z-index: 999;
+            transform: translate(-45%, -30%);
+        }
+
+        .tools {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 2rem;
+        }
+
+        #eraser {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            transition: .3s ease all;
+            margin: 1rem 0;
+        }
+
+        #eraser:active {
+            transform: scale(0.95);
+        }
+
+        #color-picker {
+            width: 50px;
+            height: 50px;
+            outline: none;
+            overflow: hidden;
+            background: none;
+            border: none;
+            border-radius: 50%;
+        }
+
+        #color-picker:focus {
+            outline: none;
+        }
+
+        #size-picker {
+            margin-top: 2rem;
+            color: black;
+            width: 5rem;
+            transform: rotate(270deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>⚫ Kodmatik ⚫</h1>
+    <div class="container">
+        <canvas class="canvas" width="650" height="650">
+        </canvas>
+        <div class="tools">
+            <input id="color-picker" type="color" />
+            <div id="eraser"></div>
+            <input id="size-picker" type="range" value="5" min="0" max="15" />
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
