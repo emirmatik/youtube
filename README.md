@@ -22,3 +22,14 @@ Video: https://www.youtube.com/watch?v=YslrZij7VZU
 ## Fotoğraflar - Photos
 
 ![Photo1.0](https://i.ibb.co/cb9xCjQ/qweqweqwe.png) <br />
+
+### SVG animasyonu ile Banner / Landing Sayfası yapımı
+
+Video: https://www.youtube.com/watch?v=jX2S3yDK1MI&t=377s
+
+#### Şu yolu izle:
+- Dosyayı indir.
+- Video açıklamasına bıraktığım linkteki sayfadan istediğin illüstrasyonu seç.
+- Figma (veya başka bir editleme uygulamasından) svg dosyanda animasyon yapmak istediğin kısımları gruplara ayır.
+- Dosyayı .svg uzantısıyla kaydet ve html dosyamızdaki svg ile yer değiştir.
+- Son olarak ise css'den @keyframes kullanarak dilediğin gibi animasyon yapabilirsin. 💪
