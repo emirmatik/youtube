@@ -7,10 +7,14 @@ Video: https://www.youtube.com/watch?v=EmeejVmpqv8
 #### Photo
 ![xox1](https://i.ibb.co/cv67RCT/321412.png)
 
+<hr>
+
 ### Paint 
 Video of easier version: https://www.youtube.com/watch?v=esS5F1TrbvM
 #### Photo
 ![paint1](https://i.ibb.co/bgqWvCm/789.png)
+
+<hr>
 
 ### Köstebeğe Vur |  Whack a Mole
 
@@ -19,9 +23,11 @@ Video of easier version: https://www.youtube.com/watch?v=esS5F1TrbvM
 
 Video: https://www.youtube.com/watch?v=YslrZij7VZU
 
-## Fotoğraflar - Photos
+#### Fotoğraflar - Photos
 
 ![Photo1.0](https://i.ibb.co/cb9xCjQ/qweqweqwe.png) <br />
+
+<hr>
 
 ### SVG animasyonu ile Banner / Landing Sayfası yapımı
 
@@ -33,3 +39,5 @@ Video: https://www.youtube.com/watch?v=jX2S3yDK1MI&t=377s
 - Figma (veya başka bir editleme uygulamasından) svg dosyanda animasyon yapmak istediğin kısımları gruplara ayır.
 - Dosyayı .svg uzantısıyla kaydet ve html dosyamızdaki svg ile yer değiştir.
 - Son olarak ise css'den @keyframes kullanarak dilediğin gibi animasyon yapabilirsin. 💪
+
+<hr>
