@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  font-family: "Montserrat", sans-serif;
+  width: 60%;
+  margin: 0 auto;
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+.nav-links {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  margin-right: 2rem;
+}
+.nav-link {
+  margin: 0 1rem;
+}
+#logo {
+  z-index: 99;
+}
+.hamburger {
+  width: 3rem;
+  height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+  z-index: 999;
+}
+.çizgi {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  pointer-events: none;
+}
+.text {
+  margin-top: 5rem;
+  line-height: 150%;
+}
+.about {
+  width: 70%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 15%;
+  background: #fdfde1;
+  color: black;
+  clip-path: circle(50px at 80% -20%);
+  -webkit-clip-path: circle(50px at 80% -20%);
+  display: flex;
+  flex-direction: column;
+}
+.social-links {
+  margin-top: 10rem;
+  margin-left: 6rem;
+}
+.social-link {
+  font-size: 4rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.social-link:hover {
+  color: gray;
+}
+.about-text {
+  width: 80%;
+  margin: 6rem;
+  line-height: 150%;
+  border: 1px solid black;
+  padding: 1rem;
+}
+.about-text h2 {
+  margin-bottom: 0.5rem;
+}
+.about-text hr {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid black;
+  width: 20%;
+}
