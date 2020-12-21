@@ -41,3 +41,8 @@ Video: https://www.youtube.com/watch?v=jX2S3yDK1MI&t=377s
 - Son olarak ise css'den @keyframes kullanarak dilediğin gibi animasyon yapabilirsin. 💪
 
 <hr>
+
+### Scroll Animation with GSAP
+Video : https://www.youtube.com/watch?v=EPK_oMs72ng&t=2s
+
+<hr>
