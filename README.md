@@ -1,6 +1,7 @@
 ## YouTube
 
 **Not: Eğer proje React ile yazılmış ise, uygulamayı çalıştırmadan önce konsolda `npm install` komutuyla gerekli paketleri yüklemeyi unutmayın!** <br/>
+<br/>
 **Note: If the project you want to download is written with React, do not forget to install dependencies with `npm install` before starting the app** <br/>
 
 YouTube Channel: https://www.youtube.com/channel/UCjKrrhpBp4ZsQPeGvqg3uSA
