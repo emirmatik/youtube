@@ -5,9 +5,7 @@ import './App.css';
 
 function App() {
   const [restaurants, setRestaurants] = useState([]);
-
-  console.log(restaurants);
-
+  
   return (
     <div className="restaurants">
       <Nav restaurants={restaurants} setRestaurants={setRestaurants} />
