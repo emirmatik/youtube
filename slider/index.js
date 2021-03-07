@@ -14,7 +14,6 @@ function slideLeft() {
    if (index == 0) index = texts.length-1;
    else index--;
    gsap.to(".images", .3, {x: `${-index*100}%`})
-
    textDiv.textContent = texts[index];
    gsap.from(textDiv, .5, {y: -20, opacity: 0, ease: 'power3.out'})
 }
