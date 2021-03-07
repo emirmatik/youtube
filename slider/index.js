@@ -1,7 +1,7 @@
 const leftArr = document.getElementById("leftArr");
 const rightArr = document.getElementById("rightArr");
 const textDiv = document.querySelector(".texts");
-const sliderCon = document.querySelector(".sliderCon"); // for swipe left / right on mobile
+const sliderCon = document.querySelector(".sliderCon"); // to swipe left / right on mobile
 let index = 0;
 
 const texts = [
