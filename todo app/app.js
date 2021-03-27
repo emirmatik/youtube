@@ -5,9 +5,8 @@ const todo_container = document.querySelector(".todo_container");
 const startConf = () => {
    // baslangic ayarlari
    const todos = JSON.parse(localStorage.getItem("todos"));
-   if (!todos || todos.length == 0) {
+   if (!todos) {
       localStorage.setItem("todos", JSON.stringify([]));
-      todo_container.textContent = "Add some todos!!";
    } else {
       todos.forEach(todo => {
          addHTML(todo);
@@ -17,7 +16,6 @@ const startConf = () => {
 
 const addTodo = (e) => {
    e.preventDefault();
-   todo_container.textContent = "";
    
    const inputVal = input.value;
 
