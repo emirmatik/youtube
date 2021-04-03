@@ -1,63 +1,69 @@
-const startBtn = document.getElementById("start");
-const scoreText = document.getElementById("score");
 const köstebekler = document.querySelectorAll(".köstebek");
+const baslatButon = document.getElementById("baslat");
+const skorText = document.querySelector("#skor");
+const süreText = document.querySelector("#süre");
 
 let öncekiKöstebek;
 let süreDoldu = false;
 let skor = 0;
+let süre = 15;
 
-// fonksiyonlar
+baslatButon.addEventListener("click", startGame);
+köstebekler.forEach((köstebek) => köstebek.addEventListener("click", vur));
 
-function rastgeleKöstebek() {
+function rastgeleKostebek() {
   const sıra = Math.floor(Math.random() * köstebekler.length);
-  const secilenKöstebek = köstebekler[sıra];
-  if (öncekiKöstebek === secilenKöstebek) {
-    return rastgeleKöstebek();
+  const secilen = köstebekler[sıra];
+  if (öncekiKöstebek === secilen) {
+    return rastgeleKostebek();
   } else {
-    öncekiKöstebek = secilenKöstebek;
+    öncekiKöstebek = secilen;
   }
-  return secilenKöstebek;
+  return secilen;
 }
 
 function rastgeleSüre(min, max) {
-  const süre = Math.round(Math.random() * (max - min)) + min;
-  return süre;
+  const time = Math.round(Math.random() * (max - min)) + min;
+  return time;
 }
 
 function yukarı() {
-  const köstebek = rastgeleKöstebek();
-  const süre = rastgeleSüre(1000, 1500);
-  console.log(süre);
+  const köstebek = rastgeleKostebek();
+  const köstebekSüresi = rastgeleSüre(750, 1250);
   köstebek.classList.add("secilen");
   setTimeout(() => {
     köstebek.classList.remove("secilen");
-    if (!süreDoldu) {
-      yukarı();
-    }
-  }, süre);
+    if (!süreDoldu) yukarı();
+  }, köstebekSüresi);
+}
+
+function süreyiBaslat() {
+  if (!süreDoldu) {
+    süre--;
+    süreText.textContent = süre;
+  } else {
+    süreText.textContent = "süre doldu";
+  }
 }
 
 function startGame() {
+  süre = 15;
+  skor = 0;
+  süreDoldu = false;
+  const interval = setInterval(() => {
+    süreyiBaslat();
+    if (süreDoldu) clearInterval(interval);
+  }, 1000);
   yukarı();
   setTimeout(() => {
     süreDoldu = true;
-  }, 15000);
+  }, süre * 1000);
 }
 
-function peep(e) {
+function vur(e) {
   if (e.target.classList.contains("secilen")) {
     skor++;
     e.target.classList.remove("secilen");
   }
-  scoreText.textContent = skor;
+  skorText.textContent = skor;
 }
-
-// event listeners
-
-startBtn.addEventListener("click", () => {
-  startGame();
-});
-
-köstebekler.forEach((köstebek) => {
-  köstebek.addEventListener("click", peep);
-});
