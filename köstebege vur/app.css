@@ -3,52 +3,56 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  width: 100%;
+  height: 100vh;
+}
 .container {
   font-family: sans-serif;
-  width: 80%;
+  width: 50%;
   margin: 5rem auto;
   text-align: center;
 }
-.container h1 {
+header h1 {
   font-size: 3rem;
   font-weight: 300;
 }
-.container h3 {
-  margin: 2rem 0;
-  font-weight: 300;
+header h3 {
+  margin: 3rem 0;
+  font-weight: 200;
 }
-#start {
-  padding: 0.5rem 1rem;
-  font-size: 1.1rem;
-  border: 0;
-  background: rgb(131, 223, 131);
+header button {
   cursor: pointer;
+  border: none;
+  padding: 0.5rem 1rem;
+  background: rgb(138, 233, 233);
 }
-#start:hover {
-  background-color: rgb(114, 226, 114);
+header button:hover {
+  background-color: rgb(101, 202, 202);
 }
 .game-container {
-  margin-top: 5rem;
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  margin-top: 5rem;
 }
 .toprak {
   position: relative;
-  width: 25%;
+  margin: 2rem 0.5rem;
+  margin-top: 5rem;
   height: 6rem;
-  margin: 3rem 1rem;
+  width: 30%;
+  background-size: cover;
 }
-.toprak:after {
+.toprak::after {
   position: absolute;
   top: 0%;
   left: 0;
-  content: "";
   width: 100%;
   height: 100%;
-  background: url("toprak.png") center no-repeat;
+  content: "";
+  background: url("./img/toprak.png") center no-repeat;
   background-size: cover;
 }
 .köstebek {
@@ -56,11 +60,36 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 5rem;
-  background: url("./köstebek.png") no-repeat center;
+  height: 5.5rem;
+  background: url("./img/köstebek.png") center no-repeat;
   background-size: contain;
-  transition: 0.3s ease all;
+  transition: all 0.3s ease;
 }
 .köstebek.secilen {
-  top: -2.2rem;
+  top: -3rem;
+}
+#süre {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  border-bottom: 1px solid black;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 70%;
+  }
+  .toprak {
+    position: relative;
+    width: 30%;
+  }
+  #süre {
+    right: 5%;
+    top: 20%;
+    border-bottom: 1px solid black;
+    font-size: 1.2rem;
+  }
 }
