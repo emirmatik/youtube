@@ -107,10 +107,6 @@ getResults.addEventListener("click", () => {
       
       const selectedOption = userSelectedInput.nextElementSibling;
 
-      console.log(allQuestions);
-
-      console.log(index);
-
       const exactAnswer = allQuestions[index].answer;
 
       if (selectedOption.textContent === exactAnswer) {
@@ -121,9 +117,5 @@ getResults.addEventListener("click", () => {
          actualOption.style.backgroundColor = "green";
          selectedOption.style.backgroundColor = "tomato";
       }
-
    })
-
-
-
 })
