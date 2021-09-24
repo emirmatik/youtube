@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="locomotive.css" />
+    <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+    <div data-scroll-container>
+        <div class="section right">
+            <div class="content">
+                <div class="content-title">More than your dreams.</div>
+                <div class="content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quisquam ratione reprehenderit nisi tempora exercitationem optio! Aperiam velit vel rerum eius debitis ratione quia adipisci officia itaque cum iure dolore modi, corrupti veritatis, non odio? Reiciendis atque iure dolores nemo.</div>
+            </div>
+            <img class="left" data-scroll data-scroll-speed="3" src="https://images.pexels.com/photos/3048527/pexels-photo-3048527.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="image" />
+            <img class="left second" data-scroll data-scroll-speed="6" src="https://images.pexels.com/photos/5618651/pexels-photo-5618651.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="image" />
+        </div>
+        <div class="section left">
+            <div class="content">
+                <div class="content-title">More than your dreams.</div>
+                <div class="content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quisquam ratione reprehenderit nisi tempora exercitationem optio! Aperiam velit vel rerum eius debitis ratione quia adipisci officia itaque cum iure dolore modi, corrupti veritatis, non odio? Reiciendis atque iure dolores nemo.</div>
+            </div>
+            <img class="right" data-scroll data-scroll-speed="3" src="https://images.pexels.com/photos/1793525/pexels-photo-1793525.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="image" />
+            <img class="right second" data-scroll data-scroll-speed="5" src="https://images.pexels.com/photos/1010079/pexels-photo-1010079.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="image" />
+        </div>
+    </div>
+
+    <script src="locomotive-scroll.min.js"></script>
+    <script>
+        var scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true
+        });
+    </script>
+</body>
+</html>
